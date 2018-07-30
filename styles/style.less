@@ -1,0 +1,61 @@
+@mainFont: Georgia, sans-serif;
+@mainFontWeight: 400;
+
+*, p, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #1f1f1f;
+	font-family: @mainFont;
+	font-weight: @mainFontWeight;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	@media all and (max-width: 767px) {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+.header {
+	border-top: 5px solid #81b300;
+	background-color: #fff;
+}
+
+@import "blocks/_headerMain";
+@import "blocks/_headerMenu";
+
+.main {
+	background-color: #fff;
+}
+
+@import "blocks/_preview";
+@import "blocks/_service";
+
+hr {
+	margin: 0;
+}
+
+@import "blocks/_work";
+
+.footer {
+	background-color: #3b3b3b;
+	border-bottom: 30px solid #1f1f1f;
+
+	@media all and (max-width: 575px) {
+		border-bottom: none;
+	}
+}
+
+@import "blocks/_footerMain";
+@import "blocks/_footerInfo";
