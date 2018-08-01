@@ -346,6 +346,7 @@ a:hover {
 @media all and (max-width: 575px) {
   .b-previewImage__item {
     border: none;
+    height: 250px;
   }
 }
 .b-previewNav {
