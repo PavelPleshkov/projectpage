@@ -402,6 +402,11 @@ a:hover {
     padding: 30px;
   }
 }
+@media all and (max-width: 575px) {
+  .b-service {
+    padding: 20px 10px;
+  }
+}
 .b-service__title {
   display: none;
 }
