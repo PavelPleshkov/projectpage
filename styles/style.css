@@ -336,6 +336,7 @@ a:hover {
   display: block;
   border: 9px solid #fff;
   height: 360px;
+  width: 100%;
   background: #333;
 }
 @media all and (min-width: 1200px) {
