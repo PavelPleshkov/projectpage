@@ -6,6 +6,12 @@
 		display: block;	
 		clear: both;
 	}
+
+	&_size_sm {
+		@media all and (max-width: 767px) {
+			padding: 0 10px;
+		}
+	}
 }
 
 .b-headerMainTitle {
@@ -70,8 +76,8 @@
 
 	&_size_sm {
 		@media all and (max-width: 575px) {
-			width: 70%;
-			min-width: 300px;
+			width: 100%;
+			// min-width: 300px;
 			margin: 0 auto;
 			float: none;
 			text-align: center;
@@ -83,15 +89,19 @@
 	background-color: #81b300;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 9px 12px;
 	// width: 250px;
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto;
 	box-sizing: border-box;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 
 	&_size_sm {
 		@media all and (max-width: 575px) {
-			padding: 5px 8px;
+			padding: 0;
 			border-radius: 20px;
 			background-color: #fff;
 		}
