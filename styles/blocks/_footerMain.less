@@ -133,7 +133,7 @@
 		display: block;
 		height: 31px;
 		outline: none;
-		border: 0 solid transparent;
+		border: 1px solid transparent;
 		border-radius: 5px;
 		padding: 10px;
 		box-sizing: border-box;
@@ -145,9 +145,15 @@
 		width: 100%;
 		margin-bottom: 10px;
 		color: #fff;
+		font-size: 13px;
+		line-height: 31px;
+		text-align: left;
 
 		@media all and (max-width: 575px) {
 			margin-bottom: 20px;
+		}
+		&:hover {
+			border: 1px solid #81b300;
 		}
 
 		&::placeholder {
@@ -155,6 +161,7 @@
 			font-size: 13px;
 			line-height: 31px;
 			text-align: left;
+			// padding: 10px;
 		}
 
 		&:hover::placeholder {
@@ -176,6 +183,7 @@
 		line-height: 10px;
 		text-align: center;
 		text-transform: uppercase;
+		padding: 10px;
 
 		&:hover {
 			color: #fff;
